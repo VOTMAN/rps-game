@@ -15,9 +15,7 @@ let computerSelection;
 function playRound(playerSelection, computerSelection) {
 
 playerSelection = prompt("Enter your choice (Rock, Paper, Scissors)").toLowerCase();
-// console.log(playerSelection);
 computerSelection  = getComputerChoice().toLowerCase();
-// console.log(computerSelection);
 
 if (playerSelection == computerSelection) {
         return ("Tie");
