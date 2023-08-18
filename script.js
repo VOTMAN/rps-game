@@ -5,5 +5,6 @@ function getComputerChoice() {
     return choices[compChoice]
 }
 
-console.log(playRound(playerSelection, computerSelection));
-  
+let playerSelection;
+let computerSelection;
+
