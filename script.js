@@ -49,7 +49,10 @@ function game() {
             console.log(roundResult)
         }
     }
-    if (playerScore >= 3) {
+    if (playerScore == computerScore) {
+        console.log("It's a tie!")
+    }
+    else if (playerScore > computerScore) {
         console.log(`You Won!, you got ${playerScore} points!`)
     } else {
         console.log(`You Lost!, you got ${playerScore} points!`)
