@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #eddcfe;
+    color: #190132;
+}
+
+body {
+    text-align: center;
+    flex-flow: column wrap;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header > h1 {
+margin-left: 5rem;
+}
+
+.header > button
+{
+    margin-left: auto;
+}
+
+input {
+   background-color: #fc7373;
+   color: #190132; 
+   border: .15rem solid #05f5f5;
+   display: flex;
+   min-width: 10em;
+   width: 12.5em;
+   justify-content: center;
+   margin-left: auto;
+   margin-right: auto;
+   font-size: 1rem;
+   margin-top: .2rem;   
+}
+
+div {
+    margin: 1.5rem
+}
+
+h1 {
+    margin-top: 1rem;
+}
