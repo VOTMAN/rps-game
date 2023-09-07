@@ -1,3 +1,3 @@
 # rps-game
 
-A simple Rock, Paper. Scissors game using javascript
+A simple Rock, Paper,Scissors game using javascript 
