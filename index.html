@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="page">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,16 +9,15 @@
 </head>
 <body>
     <div class="header">
+        <button id="theme" onclick="changeTheme()">Change Theme</button>
         <h1>Rock, Paper, Scissors, Shoot!</h1>
-        <button id="theme">Theme Change</button>
+        <button id="reload">Reload</button>
     </div>
     <div>
-        <input type="button" value="rock"/>
-        <input type="button" value="paper"/>
-        <input type="button" value="scissors"/>
+        <input id="inputBtnOne" type="button" value="rock"/>
+        <input id="inputBtnTwo" type="button" value="paper"/>
+        <input id="inputBtnThree" type="button" value="scissors"/>
     </div>
-    <div id="results">
-
-    </div>
+    <div id="results"></div>
 </body>
 </html>

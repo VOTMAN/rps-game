@@ -2,12 +2,32 @@ let playerScore = 0;
 let computerScore = 0;
 
 const buttons = document.querySelectorAll("input");
-const body = document.getElementById("results")
+const home = document.getElementById("page");
+const body = document.getElementById("results");
+const reloadBtn = document.getElementById("reload");
+const themeBtn = document.getElementById("theme");
+const inputBtnOne = document.getElementById("inputBtnOne");
+const inputBtnTwo = document.getElementById("inputBtnTwo");
+const inputBtnThree = document.getElementById("inputBtnThree");
 const roundResult = document.createElement("div");
 const finalResult = document.createElement("div");
-const div = document.createElement("div");
-const score = document.createElement("div")
+const div = document.createElement("div");;
+const score = document.createElement("div");
 
+function reloadPage() {
+    reloadBtn.addEventListener("click", () => {
+        window.location.reload();
+    })
+}
+
+function changeTheme() {
+    themeBtn.addEventListener("click", (e) => {
+        home.classList.toggle("dark");
+        inputBtnOne.classList.toggle("buttonsTheme")
+        inputBtnTwo.classList.toggle("buttonsTheme")
+        inputBtnThree.classList.toggle("buttonsTheme")
+    })
+}
 
 body.appendChild(score);
 body.appendChild(roundResult);
@@ -41,8 +61,11 @@ function playRound(playerSelection) {
     let result = "";
     let finalResult = "";
     
+    
     if (playerSelection == computerSelection) {
-        result = ("Tie");
+        result = (`Tie!`)
+        score.textContent = `Your Score: ${playerScore}\nComputer Score: ${computerScore}`
+        
     } else if (
         (playerSelection == "rock" && computerSelection == "scissors") ||
         (playerSelection == "paper" && computerSelection == "rock") || 
@@ -74,6 +97,8 @@ function playRound(playerSelection) {
 buttons.forEach(button => {
     button.addEventListener("click", function (){
         playRound(button.value)
+        reloadPage()
+        // changeTheme()
     })
 });
 
